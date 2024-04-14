@@ -7,14 +7,7 @@ terraform {
   }
 }
 
-provider "azurerm" {
-  subscription_id            = "d20ad544-b95b-410f-a838-1c48d4b7ce2a"
-  client_id                  = "bf8fbf35-19b6-4478-9f41-1f32c10ab9f6"
-  client_secret              = "gkn8Q~owZ8UW5n2_aCnH0AKUkwf0Gq4crEdr8aVo"
-  tenant_id                  = "38ad97fe-c9d2-4004-a4ee-18b67ff396cc"
-  skip_provider_registration = true
-  features {}
-}
+
 
 resource "azurerm_resource_group" "Terraform_Training" {
   name     = "Terraform-Training-rg-01"
